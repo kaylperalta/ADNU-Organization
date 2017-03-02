@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>ATENEO DE NAGA UNIVERSITY STUDENT ORGANIZATIONS PORTAL - ADNUSOP</title>
+</head>
+
+<body>
+	<div id="header">
+	<h1>Ateneo de Naga University Student Organizations</h1>
+	</div>
+
+	<ul>
+	<li><a href="/home">HOME</a></li>
+	<li><a href="/organizations">LIST OF ORGANIZATIONS</a></li>
+	<li><a href="about">ABOUT THE DEVELOPER</a></li>
+	</ul>
+
+	<a href="/organizations/new">CREATE NEW ORGANIZATION</a>
+
+	<br><br />
+
+	<h1>Listing Organizations</h1>
+
+	<table>
+	  <thead>
+	    <tr>
+	      <th>Name</th>
+	      <th>Classification</th>
+	      <th>Org identification</th>
+	      <th>Username</th>
+	      <th>Password</th>
+	      <th colspan="3"></th>
+	    </tr>
+	  </thead>
+
+	  <tbody>
+	    <% @organizations.each do |organization| %>
+	      <tr>
+		<td><%= organization.name %></td>
+		<td><%= organization.classification %></td>
+		<td><%= organization.org_identification %></td>
+		<td><%= organization.username %></td>
+		<td><%= organization.password %></td>
+		<td><%= link_to 'Show', organization %></td>
+		<td><%= link_to 'Edit', edit_organization_path(organization) %></td>
+		<td><%= link_to 'Destroy', organization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	      </tr>
+	    <% end %>
+	  </tbody>
+	</table>
+
+	<br>
+
+</body>
+</html>
+
+<%= stylesheet_link_tag "main.css" %>
