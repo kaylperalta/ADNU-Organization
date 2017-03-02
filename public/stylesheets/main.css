@@ -58,3 +58,12 @@ th {
     	text-align: center;
     	padding: 8px;
 }
+
+p{ font-size: 20px;
+}
+
+ul#list{ border:none;
+	text-align:left;
+	font-size: 20px;
+
+}
