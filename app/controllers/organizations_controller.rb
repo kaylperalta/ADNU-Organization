@@ -7,6 +7,11 @@ class OrganizationsController < ApplicationController
     @organizations = Organization.all
   end
 
+	def login
+	 @organizations = Organization.all
+  end
+		
+
   # GET /organizations/1
   # GET /organizations/1.json
   def show

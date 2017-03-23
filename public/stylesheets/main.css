@@ -1,17 +1,57 @@
 body {
-	background-color: #97cbe5;
+	background-color: white;
+	margin: 0px;
 }
 
 div#header{
 	font-family: Arial;
 	text-align: center;
+	border: 1px solid #555;
+	margin: 0px;
+	background-color: #97cbe5;
+}
 
-	margin-top: 0px;
+div#vin{
+	height: 350px;
+	width: 350px;
+	border: 1px solid #555;
+	text-align: center;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+div#form{
+	margin: 10px;
+}
+
+div#vinn{
+	text-align: center;
+}
+
+div#home{
+	margin: 10px;
+}
+
+img{
+	height: 150px;
+	width: 150px;
+	padding-top: 10px;
+}
+
+img#about{
+	border-radius: 100px;
+	height: 200px;
+	width: 200px;
 }
 
 div#one{
 	height: 200px;
-	width: 900px;
+	width: 1080px;
+	border: 1px solid #555;
+	margin: 2px;
+	padding: 5px;
+	margin: auto;
+	text-align: center;
 }
 
 div#tab{
@@ -29,16 +69,11 @@ a{
 ul {
 	margin-top: 0px;
 	margin-left: 0px;
+	margin-bottom: 0px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-   	border: 1px solid #555;
 	text-align: center;
-}
-
-table {
-    	font-family: arial, sans-serif;
-    	border-collapse: collapse;
-    	width: 100%;
+	border: 1px solid #555;
 }
 
 td#q {
@@ -47,14 +82,110 @@ td#q {
     	padding: 8px;
 }
 
-td#w {
-	float: left;
-    	text-align: left;
-    	padding: 0px;
+tr:nth-child(even) {
+    	background-color: #dddddd;
+}
+
+table {
+    	font-family: arial, sans-serif;
+
+    	width: 100%;
 }
 
 th {
 	border: 1px solid black;
     	text-align: center;
     	padding: 8px;
+}
+
+td {
+	border: 1px solid black;
+}
+
+p{ 
+	font-size: 20px;
+}
+
+ul#list{ 
+	border:none;
+	text-align:left;
+	font-size: 20px;
+}
+
+h1#show{
+	padding: 25px;
+	font-family: Lucida Console, Monaco, Monospace;
+	text-align: center;
+	font-size: 30pt;
+}
+
+div#showhead{
+	height: 250px;
+	width: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px;
+	
+}
+
+div#headerhead{
+	height: 795px;
+	width: 980px;
+	border: 1px solid black;
+	padding: 10px;
+	padding-top: 30px;
+	float: right;
+	font-size: 30pt;
+	text-align: center;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div#news{
+	height: 250px;
+	width: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px;
+	
+}
+
+div#calendar{
+	height: 250px;
+	width: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px;
+	
+}
+
+.footer {
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+	padding: 1rem;
+  	background-color: #97cbe5;
+  	text-align: center;
+	margin-top: 20px;
+	border: 1px solid black;
+}
+
+div#login{
+	width: 500px;
+	height: 300px;
+	text-align: center;
+	margin: auto;
+	padding-top: 100px;
+
+}
+
+h1#hmm{
+	font-size: 20px;
+	font-family: Lucida Console, Monaco, Monospace;
+}
+
+p#h{
+	font-size: 15px;
+	font-family: Lucida Console, Monaco, Monospace;
 }
