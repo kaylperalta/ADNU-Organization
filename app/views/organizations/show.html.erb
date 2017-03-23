@@ -1,31 +1,57 @@
-<p id="notice"><%= notice %></p>
+<html>
+<head>
+	<title>ATENEO DE NAGA UNIVERSITY STUDENT ORGANIZATIONS PORTAL - ADNUSOP</title>
+</head>
 
-<p>
-  <strong>Name:</strong>
-  <%= @organization.name %>
-</p>
+<body>
+	<div id="header">
+	<img src="/images/adnu.png" alt="rss feed" />
+	<h1>Ateneo de Naga University Student Organizations</h1>
 
-<p>
-  <strong>Classification:</strong>
-  <%= @organization.classification %>
-</p>
+	<ul>
+	<li><a href="/home">HOME</a></li>
+	<li><a href="/organizations">LIST OF ORGANIZATIONS</a></li>
+	<li><a href="/about">ABOUT THE DEVELOPER</a></li>
+	</ul>
+	</div>
 
-<p>
-  <strong>Org identification:</strong>
-  <%= @organization.org_identification %>
-</p>
+	<div id="headerhead">
+	<h1 id="show">
+	  <strong><%= @organization.name %></strong>
+	</h1>
 
-<p>
-  <strong>Username:</strong>
-  <%= @organization.username %>
-</p>
+	<p>Lorem ipsum dolor sit amet, quaeque alienum pericula pri ad, vocent petentium cotidieque mei te, cu vel porro dolore. Dico sanctus ne 			sea, id vix delectus eleifend. Mei ex veniam quaeque efficiendi. Vix sanctus detracto cu, pri suscipit efficiendi intellegam at. 			Vix everti graecis appellantur eu, id possit nostrud aliquam est.</p>
+	</div>
 
-<p>
-  <strong>Password:</strong>
-  <%= @organization.password %>
-</p>
+	<div id="showhead">
+	<p>Organization Account Details</p>
+	<h3><%= @organization.classification %></h3>
+	<h3>Org identification number: <%= @organization.org_identification %></h3>
+	<h3>Username: <%= @organization.username %></h3>
+	<h3>Password: <%= @organization.password %></h3>
 
-<%= link_to 'Edit', edit_organization_path(@organization) %> |
-<%= link_to 'Back', organizations_path %>
+	<%= link_to 'Edit', edit_organization_path(@organization) %> |
+	<%= link_to 'Back', organizations_path %>
+	</div>
+
+	<div id="news">
+	<p>Org Announcements</p>
+	</div>
+
+	<div id="calendar">
+	<p>Org Calendar of Activities</p>
+	</div>
+
+	<br>
+
+
+	<div class="footer">
+	Web Development Class of 2017</br>
+	Developed by: Peralta, Alajor, Alanis</br>
+	COPYRIGHT 2017
+	</div>
+
+</body>
+</html>
 
 <%= stylesheet_link_tag "main.css" %>
